@@ -1,5 +1,6 @@
 import "./globals.css";
 import Navbar from "../components/Shared/Navbar";
+import Footer from "@/components/Shared/Footer";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -24,7 +25,9 @@ export default function RootLayout({ children }) {
       >
         <Navbar/>
         {children}
+        <Footer/>
       </body>
+
     </html>
   );
 }

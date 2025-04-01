@@ -8,16 +8,16 @@ import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 
 const HeroSection = () => {
   return (
-    <div className="w-full pt-[9rem] pb-[5rem] md:py-[13rem] lg:py-[13rem]  flex flex-col justify-center  items-start bg-white">
+    <section className="w-full pt-[9rem] pb-[5rem] md:py-[13rem] lg:py-[13rem]  flex flex-col justify-center  items-start bg-white">
       <img
         src={"/HomeImages/people.png"}
         alt="img"
-        className="absolute  invisible md:visible z-[-2rem] md:z-2 lg:z-2 right-[-5rem] w-[46rem]"
+        className="absolute  invisible md:visible lg:visible z-[-2rem] md:z-2 lg:z-2 right-[-10%] top-[3rem] w-[46rem]"
       />
       <img
         src={"/HomeImages/citybg.png"}
         alt="img"
-        className="absolute bg-auto z-[1] right-[-40rem] bottom-[-31rem] h-[200%]"
+        className="absolute bg-auto invisible md:visible lg:visible z-[1] right-[-40%] bottom-[-31rem] h-[200%]"
       />
       <div className="w-full md:w-[65%] lg:w-[65%] px-4 md:px-[7rem] lg:px-[7rem] z-2 ">
         <div className=" w-full">
@@ -43,7 +43,7 @@ const HeroSection = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

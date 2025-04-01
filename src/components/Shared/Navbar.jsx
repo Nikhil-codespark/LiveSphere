@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="w-[100vw] flex justify-center items-center fixed z-10 top-0">
+      <nav  className="w-[100vw] flex justify-center items-center fixed z-10 top-0">
         <div className="h-[4rem] w-full bg-white border-b-2 py-[2.7rem]  top-0 z-8 flex flex-row md:flex-row lg:flex-row justify-center items-center overflow-hidden">
           <div className=" w-[100%] md:w-[20%] lg:w-[20%]  h-full  flex justify-start pl-6 items-center  gap-1">
             <img
@@ -34,19 +34,19 @@ const Navbar = () => {
           <div className="w-[60%] h-full hidden md:visible lg:visible  md:flex lg:flex justify-center items-center  gap-4 md:gap-15 lg:gap-15">
             <Link
               href={"/about"}
-              className="text-gray-600 hover:text-gray-400 transition-all  text-sm font-normal"
+              className="text-gray-600 hover:text-gray-400 transition-all  text-[0.9rem] "
             >
               About
             </Link>
             <Link
               href={"/blog"}
-              className="text-gray-600 hover:text-gray-400 transition-all px-4 py-[6] rounded-[0.8rem] bg-[#d1ddee] text-sm font-normal"
+              className="text-gray-600 hover:text-gray-400 transition-all px-4 py-[6] rounded-[0.8rem] bg-[#d1ddee] text-[0.9rem] "
             >
               Blog
             </Link>
             <Link
               href={"/contact"}
-              className="text-gray-600 hover:text-gray-400 transition-all  text-sm font-normal"
+              className="text-gray-600 hover:text-gray-400 transition-all  text-[0.9rem] "
             >
               Contact
             </Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
         </div>
       </nav>
       {menu && (
-        <section className="w-[45%] shadow-2xs h-full bg-[#d1ddee] fixed md:hidden lg:hidden top-0 right-0 z-20 py-6">
+        <section className="w-[16rem] shadow-2xl  h-full bg-[#d1ddee] fixed md:hidden lg:hidden top-0 right-0 z-20 py-6">
           <div className="h-[10%] w-full pl-6">
             <button
               onClick={() => setMenu((pre) => !pre)}
@@ -75,22 +75,22 @@ const Navbar = () => {
               <MdKeyboardArrowRight size={20} />
             </button>
           </div>
-          <div className="w-full h-full  flex flex-col md:hidden lg:hidden justify-start items-center  gap-2 md:gap-15 lg:gap-15">
+          <div className="w-full h-full pl-3 flex flex-col md:hidden lg:hidden justify-start items-center  gap-2 md:gap-15 lg:gap-15">
             <Link
               href={"/about"}
-              className="text-gray-600 hover:text-gray-400 flex items-center justify-center transition-all w-full px-4 py-[6] bg-gray-200 text-md font-semibold"
+              className="text-gray-600 rounded hover:text-gray-400 flex items-center justify-center transition-all w-full px-4 py-[6] bg-gray-200 text-md font-semibold"
             >
               About
             </Link>
             <Link
               href={"/blog"}
-              className="text-gray-600 hover:text-gray-400 flex items-center justify-center transition-all w-full px-4 py-[6] bg-gray-200 text-md font-semibold"
+              className="text-gray-600 rounded hover:text-gray-400 flex items-center justify-center transition-all w-full px-4 py-[6] bg-gray-200 text-md font-semibold"
             >
               Blog
             </Link>
             <Link
               href={"/contact"}
-              className="text-gray-600 hover:text-gray-400 flex items-center justify-center transition-all w-full px-4 py-[6] bg-gray-200 text-md font-semibold"
+              className="text-gray-600 rounded hover:text-gray-400 flex items-center justify-center transition-all w-full px-4 py-[6] bg-gray-200 text-md font-semibold"
             >
               Contact
             </Link>
