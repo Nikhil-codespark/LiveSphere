@@ -8,7 +8,7 @@ import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 
 const HeroSection = () => {
   return (
-    <section className="w-full pt-[9rem] pb-[5rem] md:py-[13rem] lg:py-[13rem]  flex flex-col justify-center  items-start bg-white">
+    <section className="w-full pt-[9rem] pb-[5rem] md:py-[13rem] lg:py-[13rem]  flex flex-col justify-center  items-start bg-white relative overflow-hidden">
       <img
         src={"/HomeImages/people.png"}
         alt="img"
