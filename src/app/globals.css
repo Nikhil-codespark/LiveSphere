@@ -36,3 +36,14 @@ body {
       scrollbar-width: none; /* Firefox */
     }
 }
+
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent layout shift during scroll */
+.transition-transform {
+  will-change: transform;
+}
+
