@@ -5,7 +5,7 @@ import { animationOnce } from "@/Configs/config";
 
 const LastQuote = () => {
   return (
-    <article className="w-[100vw] bg-white my-0 md:pb-[13rem] lg:pb-[13rem] h-fit text-gray-700 flex justify-center items-center ">
+    <article className="w-[100vw]  my-0 md:pb-[13rem] lg:pb-[13rem] h-fit text-gray-700 flex justify-center items-center ">
       {/* <img
         src={"/HomeImages/Consultation/HomeBubble2.png"}
         alt="img"

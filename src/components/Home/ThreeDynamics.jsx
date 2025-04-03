@@ -5,7 +5,7 @@ import React from 'react'
 
 const ThreeDynamics = () => {
   return (
-    <section className="w-full pb-[13rem] text-gray-200 px-6 bg-white flex flex-col justify-center items-center">
+    <section className="w-full pb-[13rem] text-gray-200 px-6 flex flex-col justify-center items-center">
       <div className="w-full py-6 flex justify-center items-center">
         <h2 className="font-bold text-5xl text-gray-700">
           Meet Closer, Go Further

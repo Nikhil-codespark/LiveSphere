@@ -31,7 +31,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/components/ui/TextGenerateEffect.jsx"  ],
+, "src/components/ui/TextGenerateEffect.jsx", "src/components/Home/GridRows.jsx"  ],
   "exclude": [
     "node_modules"
   ]

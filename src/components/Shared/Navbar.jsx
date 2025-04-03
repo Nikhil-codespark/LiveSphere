@@ -43,31 +43,41 @@ const Navbar = () => {
           <div className="w-[60%] h-full hidden md:visible lg:visible md:flex lg:flex justify-center items-center gap-4 md:gap-15 lg:gap-15">
             <Link
               href={"/features"}
-              className={pathname === "/features" ? activeTabStyle : inactiveTabStyle}
+              className={
+                pathname === "/features" ? activeTabStyle : inactiveTabStyle
+              }
             >
               Features
             </Link>
             <Link
               href={"/howItWorks"}
-              className={pathname === "/howItWorks" ? activeTabStyle : inactiveTabStyle}
+              className={
+                pathname === "/howItWorks" ? activeTabStyle : inactiveTabStyle
+              }
             >
               How It Works
             </Link>
             <Link
               href={"/about"}
-              className={pathname === "/about" ? activeTabStyle : inactiveTabStyle}
+              className={
+                pathname === "/about" ? activeTabStyle : inactiveTabStyle
+              }
             >
               About
             </Link>
             <Link
               href={"/blog"}
-              className={pathname === "/blog" ? activeTabStyle : inactiveTabStyle}
+              className={
+                pathname === "/blog" ? activeTabStyle : inactiveTabStyle
+              }
             >
               Blog
             </Link>
             <Link
               href={"/contact"}
-              className={pathname === "/contact" ? activeTabStyle : inactiveTabStyle}
+              className={
+                pathname === "/contact" ? activeTabStyle : inactiveTabStyle
+              }
             >
               Contact
             </Link>
@@ -75,7 +85,18 @@ const Navbar = () => {
 
           {/* Rest of your code remains the same */}
           <div className="w-[50%] md:w-[20%] lg:w-[20%] h-full hidden md:visible lg:visible md:flex lg:flex justify-end pr-6 items-center">
-            <button className="bg-[#003b95] text-sm font-normal rounded-[0.7rem] px-[13] py-2 hover:bg-gray-800 cursor-pointer transition-all flex text-gray-100 items-center gap-2">
+            <button
+              className="bg-[#003b95] text-sm font-normal rounded-[0.7rem] px-[13] py-2 hover:bg-gray-800 cursor-pointer transition-all flex text-gray-100 items-center gap-2"
+              onClick={() =>
+                window.open(
+                  "https://apps.apple.com/in/app/livesphere-networking/id6738740493",
+                  "_blank"
+                ) ||
+                window.location.replace(
+                  "https://apps.apple.com/in/app/livesphere-networking/id6738740493"
+                )
+              }
+            >
               Try for free
               <BiLogoPlayStore size={20} />
             </button>
