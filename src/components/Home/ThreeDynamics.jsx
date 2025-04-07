@@ -11,8 +11,8 @@ const ThreeDynamics = () => {
           Meet Closer, Go Further
         </h2>
       </div>
-      <div className="w-[70%] cursor-pointer py-6 flex justify-center gap-2  items-center">
-        <div className="w-[33%] relative hover:w-[80%] transition-all delay-100 duration-500 ease-in-out rounded-2xl h-[35rem] bg-blue-100 overflow-hidden">
+      <div className="lg:w-[70%] cursor-pointer py-6 flex justify-center gap-2  items-center">
+        <div className="w-[33%] relative hover:w-[80%] transition-all delay-100 duration-500 ease-in-out rounded-2xl lg:h-[35rem] h-[24rem] bg-blue-100 overflow-hidden">
           <img
             src={"/HomeImages/threeDynamics1.jpg"}
             alt="Picture of the author"
@@ -23,7 +23,7 @@ const ThreeDynamics = () => {
             <p className="text-gray-200 text-sm">Fashion Designer</p>
           </div>
         </div>
-        <div className="w-[33%] relative hover:w-[80%] transition-all delay-100 duration-500 ease-in-out rounded-2xl h-[35rem] bg-blue-100 overflow-hidden">
+        <div className="w-[33%] relative hover:w-[80%] transition-all delay-100 duration-500 ease-in-out rounded-2xl lg:h-[35rem] h-[24rem] bg-blue-100 overflow-hidden">
           <img
             src={"/HomeImages/threeDynamics2.jpg"}
             alt="Picture of the author"
@@ -34,7 +34,7 @@ const ThreeDynamics = () => {
             <p className="text-gray-200 text-sm">Doctor </p>
           </div>
         </div>
-        <div className="w-[33%] hover:w-[80%] transition-all delay-100 duration-500 ease-in-out rounded-2xl h-[35rem] bg-blue-100 overflow-hidden relative">
+        <div className="w-[33%] hover:w-[80%] transition-all delay-100 duration-500 ease-in-out rounded-2xl lg:h-[35rem] h-[24rem] bg-blue-100 overflow-hidden relative">
           <img
             src={"/HomeImages/threeDynamics3.jpg"}
             alt="Picture of the author"

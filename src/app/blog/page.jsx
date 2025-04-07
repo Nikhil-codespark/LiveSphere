@@ -161,64 +161,46 @@ const page = () => {
           </section>
     
           {/* Dual Column Blog Section */}
-          <section className="relative py-16 px-4 overflow-hidden">
-            <div className="max-w-6xl mx-auto flex">
-              {/* Left Column - Scrolls slower */}
-              <div 
-                ref={leftColumnRef}
-                className="w-1/2 pr-4 transition-transform duration-300 ease-out"
-              >
-                {leftColumnBlogs.map((blog) => (
-                  <BlogCard key={blog.id} blog={blog} />
-                ))}
+          <section className="py-16 px-4">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+            {blogs.map((blog) => (
+              <div key={blog.id} className="bg-dark rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                <img 
+                  src={blog.image} 
+                  alt={blog.title}
+                  className="w-full h-48 lg:h-64 object-cover"
+                />
+                <div className="p-6">
+                  <div className="flex items-center mb-2">
+                    <span className="text-sm text-blue-600 font-semibold">{blog.category}</span>
+                    <span className="mx-2 text-gray-400">•</span>
+                    <span className="text-sm text-gray-500">{blog.date}</span>
+                  </div>
+                  <h2 className="text-xl lg:text-2xl font-bold mb-3 hover:text-blue-600 transition">
+                    <Link href={`/blog/${blog.id}`}>{blog.title}</Link>
+                  </h2>
+                  <p className="text-gray-400 mb-4 lg:text-lg">{blog.excerpt}</p>
+                  <div className="flex justify-between items-center">
+                    <span className="text-sm text-gray-500">{blog.readTime}</span>
+                    {/* <Link 
+                      href={`/blog/${blog.id}`}
+                      className="text-blue-600 hover:text-blue-800 font-medium text-sm flex items-center"
+                    >
+                      Read more
+                      <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </Link> */}
+                  </div>
+                </div>
               </div>
-              
-              {/* Right Column - Scrolls faster */}
-              <div 
-                ref={rightColumnRef}
-                className="w-1/2 pl-4 transition-transform duration-300 ease-out"
-              >
-                {rightColumnBlogs.map((blog) => (
-                  <BlogCard key={blog.id} blog={blog} />
-                ))}
-              </div>
-            </div>
-          </section>
-    
-          {/* Newsletter CTA (unchanged) */}
-          <section className="bg-gray-100 py-16 px-4">
-            {/* ... */}
-          </section>
-        </div>
-      );
-    };
-    
-    // Extracted Blog Card Component
-    const BlogCard = ({ blog }) => (
-      <div className="bg-dark font-la rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300 mb-8">
-        <img
-          src={blog.image}
-          alt={blog.title}
-          className="w-full h-80 object-cover"
-          loading="lazy"
-        />
-        <div className="p-6">
-          <div className="flex items-center mb-2">
-            <span className="text-sm text-blue-600 font-semibold">
-              {blog.category}
-            </span>
-            <span className="mx-2 text-gray-400">•</span>
-            <span className="text-sm text-gray-500">{blog.date}</span>
-          </div>
-          <h2 className="text-2xl font-semibold mb-3 hover:text-blue-600 transition">
-            <Link href={`/blog/${blog.id}`}>{blog.title}</Link>
-          </h2>
-          <p className="text-gray-400 text-lg mb-4">{blog.excerpt}</p>
-          <div className="flex justify-between items-center">
-            <span className="text-sm text-gray-500">{blog.readTime}</span>
+            ))}
           </div>
         </div>
+      </section>
       </div>
     );
+};
 
 export default page;

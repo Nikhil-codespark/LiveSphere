@@ -8,7 +8,7 @@ import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 
 const HeroSection = () => {
   return (
-    <section className="w-full pt-[9rem] pb-[5rem] md:py-[13rem] lg:py-[13rem]  flex flex-col justify-center  items-start relative overflow-hidden">
+    <section className="w-full pt-[9rem] pb-[5rem] md:py-[13rem] lg:py-[13rem]  flex flex-col justify-center  items-start bg-white">
       <img
         src={"/HomeImages/people.png"}
         alt="img"
@@ -33,33 +33,11 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="w-full flex flex-row justify-start items-center pl-3 gap-[2rem] mt-[3rem]">
-          <button
-            className="bg-[#003b95] text-sm md:text-md font-bold rounded-[2rem] px-5 py-3 hover:bg-gray-800 cursor-pointer transition-all flex  text-gray-100 items-center gap-2"
-            onClick={() =>
-              window.open(
-                "https://apps.apple.com/in/app/livesphere-networking/id6738740493",
-                "_blank"
-              ) ||
-              window.location.replace(
-                "https://apps.apple.com/in/app/livesphere-networking/id6738740493"
-              )
-            }
-          >
+          <button className="bg-[#003b95] text-sm md:text-md font-bold rounded-[2rem] px-5 py-3 hover:bg-gray-800 cursor-pointer transition-all flex  text-gray-100 items-center gap-2">
             <FaApple size={20} />
             App Store
           </button>
-          <button
-            className="bg-[#003b95] text-sm md:text-md font-bold rounded-[2rem] px-5 py-3 hover:bg-gray-800 cursor-pointer transition-all flex text-gray-100  items-center gap-2"
-            onClick={() =>
-              window.open(
-                "https://apps.apple.com/in/app/livesphere-networking/id6738740493",
-                "_blank"
-              ) ||
-              window.location.replace(
-                "https://apps.apple.com/in/app/livesphere-networking/id6738740493"
-              )
-            }
-          >
+          <button className="bg-[#003b95] text-sm md:text-md font-bold rounded-[2rem] px-5 py-3 hover:bg-gray-800 cursor-pointer transition-all flex text-gray-100  items-center gap-2">
             <BiLogoPlayStore size={20} />
             Play Store
           </button>

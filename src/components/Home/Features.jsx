@@ -30,7 +30,7 @@ const Features = ({curBgColor}) => {
     <section
       className={`w-[100vw]  h-fit px-6 text-gray-600 flex flex-col justify-center items-center py-[6rem] `}
     >
-      <div className="w-full py-[10rem] overflow-hidden">
+      <div className="w-full lg:py-[10rem] py-[6rem] overflow-hidden">
         <motion.div
           initial={{ translateX: 0, translateY: 0, opacity: 0.4 }} // Initially, clip the whole element
           whileInView={{

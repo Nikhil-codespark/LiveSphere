@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const GridRows = () => {
   return (
-    <div className="w-[100vw] h-fit text-gray-700 pb-[7rem] flex justify-center items-center md:my-[6rem] lg:my-[6rem]">
+    <div className="w-[100vw] h-fit text-gray-700 pb-[7rem] flex flex-col lg:flex-row md:flex-row justify-center items-center md:my-[6rem] lg:my-[6rem] gap-6">
       <motion.div
         initial={{ translateX: -33, opacity: 0 }} // Initially, clip the whole element
         whileInView={{
@@ -15,7 +15,7 @@ const GridRows = () => {
         viewport={{ once: animationOnce }}
         transition={{ duration: 0.6, ease: "easeInOut" }} // Animation duration
         style={{ transformOrigin: "top right" }}
-        className="w-[60vw] pl-[6rem] "
+        className="lg:w-[60vw] w-[90vw] md:pl-[6rem] lg:pl-[6rem]  "
       >
         <Image
           src={"/HomeImages/girl.jpg"}
@@ -43,11 +43,11 @@ const GridRows = () => {
         style={{ transformOrigin: "top right" }}
         className="flex flex-col justify-center items-center gap-6"
       >
-        <div className="w-[40vw] flex flex-col gap-3 pl-[3rem] pr-[6rem] justify-centeritems-center">
-          <h2 className="lg:text-5xl  text-5xl md:text-5xl font-bold text-right">
+        <div className="lg:w-[40vw] flex flex-col gap-3 lg:pl-[3rem] lg:pr-[6rem] px-6 justify-centeritems-center">
+          <h2 className="lg:text-5xl  text-3xl md:text-5xl font-bold lg:text-right text-center">
             Find Someone In Spots You Love{" "}
           </h2>
-          <p className="lg:text-xl text-xl md:text-xl text-gray-400 w-full text-right">
+          <p className="lg:text-xl text-xl md:text-xl text-gray-400 w-full lg:text-right text-center">
             {" "}
             Turn every moment of your day into an opportunity to meet new
             people.{" "}
