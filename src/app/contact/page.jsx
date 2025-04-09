@@ -15,10 +15,10 @@ const page = () => {
           </section>
     
           {/* Contact Content */}
-          <section className="lg:py-16 px-4">
+          <section className="lg:py-16 px-4 bg-[url('/assets/images/about-bg-gradient2.png')]">
             <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
               {/* Contact Form */}
-              <div className="bg-dark-secondary p-8 rounded-xl shadow-lg">
+              <div className="bg-dark-secondary p-8 rounded-xl ">
                 <h2 className="text-2xl font-bold mb-6 text-white">Send Us a Message</h2>
                 <form className="space-y-6">
                   <div>
@@ -72,7 +72,7 @@ const page = () => {
     
               {/* Contact Info */}
               <div className="space-y-8">
-                <div className="bg-dark-secondary p-8 rounded-xl shadow-lg">
+                <div className="bg-dark-secondary p-8 rounded-xl">
                   <h2 className="text-2xl font-bold mb-6 text-white">Contact Information</h2>
                   <div className="space-y-6">
                     <div className="flex items-start">
@@ -116,7 +116,7 @@ const page = () => {
                 </div>
     
                 {/* Social Media */}
-                <div className="bg-dark-secondary p-8 rounded-xl shadow-lg">
+                <div className="bg-dark-secondary p-8 rounded-xl ">
                   <h2 className="text-2xl font-bold mb-6 text-white">Connect With Us</h2>
                   <div className="flex space-x-4">
                     <Link href="#" className="bg-dark hover:bg-blue-600 p-3 rounded-lg transition duration-300">

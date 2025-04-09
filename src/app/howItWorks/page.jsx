@@ -6,84 +6,93 @@ const page = () => {
      {/* Steps Section */}
 <section className="py-32 px-4">
   <div className="max-w-4xl mx-auto">
-    <h1 className="text-4xl font-bold text-center mb-12">How It Works</h1>
+    <h1 className="text-4xl lg:text-5xl font-bold text-center my-12">How It Works</h1>
     
-    <div className="space-y-12">
-       {/* Step 1 */}
-      <div className="flex flex-col md:flex-row items-center">
-        <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
-          <div className="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center text-blue-600 text-2xl font-bold">
-            1
-          </div>
-        </div>
-        <div className="md:w-2/3">
-          <h2 className="text-2xl font-semibold mb-4">Create Your Profile(s)</h2>
-          <p className="text-gray-500 mb-4">
-            Set up different profiles for different purposes - dating, professional, friendship, etc.
-          </p>
-          <ul className="space-y-2">
-            <li className="flex items-start">
+    
+    <div className="flex bg-dark flex-col justify-between gap-24 my-24 text-center">
+                        {/* Step 1 */}
+                        <div className="bg-blue-50 p-4  w-[60rem] md:max-w-full m-auto rounded-lg relative">
+                            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
+                                1
+                            </div>
+                            <h3 className="font-semibold text-blue-900 my-2 text-lg sm:text-2xl">Create Your Profile(s)</h3>
+                            <p className="text-blue-700 text-lg">
+                            Set up different profiles for different purposes - dating, professional, friendship, etc.</p>
+                           
+                            <ul className="flex flex-col space-y-2 my-4 items-center">
+            <li className="flex items-start text-blue-500">
               <span className="text-blue-500 mr-2">•</span>
               <span>Add photos and information relevant to each profile type</span>
             </li>
-            <li className="flex items-start">
+            <li className="flex items-start text-blue-500">
               <span className="text-blue-500 mr-2">•</span>
               <span>Set your visibility preferences for each profile</span>
             </li>
           </ul>
-        </div>
-      </div>
-      
-       {/* Step 2 */}
-      <div className="flex flex-col md:flex-row items-center">
-        <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
-          <div className="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center text-purple-600 text-2xl font-bold">
-            2
-          </div>
-        </div>
-        <div className="md:w-2/3">
-          <h2 className="text-2xl font-semibold mb-4">Discover People Nearby</h2>
-          <p className="text-gray-500 mb-4">
-            The app shows you people around you based on your current profile selection.
-          </p>
-          <ul className="space-y-2">
-            <li className="flex items-start">
-              <span className="text-purple-500 mr-2">•</span>
+                            {/* <img src={arrow} loading="lazy" alt="" className='transform scale-x-[-1] -mt-[75px] absolute -ml-52 left-4 z-10 rotate-180'/> */}
+
+                        </div>
+
+                        {/* Arrow 1 */}
+                        {/* <div className='absolute left-[28%] top-1/2 transform -translate-y-1/2 sm:left-[42%]'>
+              <ArrowRight className='w-8 h-8 text-blue-400' />
+            </div> */}
+
+                        {/* Step 2 */}
+                        <div className="bg-green-50 p-4 w-[60rem] md:max-w-full m-auto rounded-lg relative">
+                            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
+                                2
+                            </div>
+                            <h3 className="font-semibold text-green-900 my-2 text-lg sm:text-2xl">
+                            Discover People Nearby
+                            </h3>
+                            <p className="text-green-700 text-lg">
+                            The app shows you people around you based on your current profile selection.
+                            </p>
+                            <ul className="flex flex-col space-y-2 my-4 items-center">
+            <li className="flex items-start text-green-500">
+              <span className="text-green-500 mr-2">•</span>
               <span>See who's in your vicinity right now</span>
             </li>
-            <li className="flex items-start">
-              <span className="text-purple-500 mr-2">•</span>
+            <li className="flex items-start text-green-500">
+              <span className="text-green-500 mr-2">•</span>
               <span>Filter by distance, interests, profession, etc.</span>
             </li>
           </ul>
-        </div>
-      </div>
-      
-       {/* Step 3 */}
-      <div className="flex flex-col md:flex-row items-center">
-        <div className="md:w-1/3 mb-6 md:mb-0 flex justify-center">
-          <div className="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center text-green-600 text-2xl font-bold">
-            3
-          </div>
-        </div>
-        <div className="md:w-2/3">
-          <h2 className="text-2xl font-semibold mb-4">Make Meaningful Connections</h2>
-          <p className="text-gray-500 mb-4">
-            Reach out to people who interest you with context-appropriate messages.
-          </p>
-          <ul className="space-y-2">
-            <li className="flex items-start">
-              <span className="text-green-500 mr-2">•</span>
+                        </div>
+
+                        {/* Arrow 2 */}
+                        {/* <div className="absolute left-[61%] top-1/2 transform -translate-y-1/2 sm:left-[72%]">
+              <ArrowRight className="w-8 h-8 text-blue-400" />
+            </div> */}
+
+                        {/* Step 3 */}
+                        <div className="bg-purple-50 p-4 w-[60rem]  md:max-w-full m-auto rounded-lg relative">
+                            <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-purple-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
+                                3
+                            </div>
+                            <h3 className="font-semibold text-purple-900 my-2 text-lg sm:text-2xl">
+                            Make Meaningful Connections
+                            </h3>
+                            <p className="text-purple-700 text-lg">
+                              
+Make Meaningful Connections
+Reach out to people who interest you with context-appropriate messages.
+                            </p>
+                            <ul className="flex flex-col space-y-2 my-4 items-center">
+            <li className="flex items-start text-purple-500">
+              <span className="text-purple-500 mr-2">•</span>
               <span>Use suggested icebreakers or write your own</span>
             </li>
-            <li className="flex items-start">
-              <span className="text-green-500 mr-2">•</span>
+            <li className="flex items-start text-purple-500">
+              <span className="text-purple-500 mr-2">•</span>
               <span>Connect for dates, professional collaboration, or friendships</span>
             </li>
           </ul>
-        </div>
-      </div>
-    </div>
+                            {/* <img src={arrow} loading="lazy" alt="" className='-mt-[340px] absolute -mr-52 right-4 z-10 rotate-180'/> */}
+
+                        </div>
+                    </div>
   </div>
 </section>
 

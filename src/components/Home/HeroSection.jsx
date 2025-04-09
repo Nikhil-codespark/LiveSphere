@@ -8,43 +8,43 @@ import { TextGenerateEffect } from "../ui/TextGenerateEffect";
 
 const HeroSection = () => {
   return (
-    <section className="w-full pt-[9rem] pb-[5rem] md:py-[13rem] lg:py-[13rem]  flex flex-col justify-center  items-start bg-white">
-      <img
-        src={"/HomeImages/people.png"}
-        alt="img"
-        className="absolute  invisible md:visible lg:visible z-[-2rem] md:z-2 lg:z-2 right-[-10%] top-[3rem] w-[46rem]"
-      />
-      <img
-        src={"/HomeImages/citybg.png"}
-        alt="img"
-        className="absolute bg-auto invisible md:visible lg:visible z-[1] right-[-40%] bottom-[-31rem] h-[200%]"
-      />
-      <div className="w-full md:w-[65%] lg:w-[65%] px-4 md:px-[7rem] lg:px-[7rem] z-2 ">
-        <div className=" w-full">
-          <TextGenerateEffect
-            words={"Find Anyone, Anytime"}
-            className="text-[40px] md:text-6xl lg:text-7xl"
-          />
-          <p className="text-gray-600 px-3 pr-0 md:pr-[6rem] lg:pr-[6rem]">
-            "Our platform connects you with the people and professionals you
-            need—right in your neighborhood. Whether you're looking for a
-            doctor, mechanic, engineer, or even a new friend, we make it easy to
-            find and connect with trusted individuals nearby."
-          </p>
-        </div>
-        <div className="w-full flex flex-row justify-start items-center pl-3 gap-[2rem] mt-[3rem]">
-          <button className="bg-[#003b95] text-sm md:text-md font-bold rounded-[2rem] px-5 py-3 hover:bg-gray-800 cursor-pointer transition-all flex  text-gray-100 items-center gap-2">
-            <FaApple size={20} />
-            App Store
-          </button>
-          <button className="bg-[#003b95] text-sm md:text-md font-bold rounded-[2rem] px-5 py-3 hover:bg-gray-800 cursor-pointer transition-all flex text-gray-100  items-center gap-2">
-            <BiLogoPlayStore size={20} />
-            Play Store
-          </button>
-        </div>
+    <section className="grid grid-cols-1 md:grid-cols-2 mt-20 md:mt-20 p-4 md:p-12 bg-white">
+    <div className="flex flex-col">
+      <div>
+        <TextGenerateEffect
+          words={"Find Anyone, Anytime"}
+          className="text-3xl md:text-6xl lg:text-7xl"
+        />
+        <p className="text-gray-600 px-0 md:px-3 pr-0 md:pr-[6rem] lg:pr-[6rem] mt-4">
+          "Our platform connects you with the people and professionals you
+          need—right in your neighborhood. Whether you're looking for a
+          doctor, mechanic, engineer, or even a new friend, we make it easy to
+          find and connect with trusted individuals nearby."
+        </p>
       </div>
-    </section>
+      <div className="w-full flex flex-row justify-start items-center pl-0 md:pl-3 gap-4 md:gap-[2rem] mt-6 md:mt-[3rem]">
+        <button className="bg-[#003b95] text-xs md:text-sm font-bold rounded-[2rem] px-4 py-2 md:px-5 md:py-3 hover:bg-gray-800 cursor-pointer transition-all flex text-gray-100 items-center gap-2">
+          <FaApple size={16} className="md:size-[20px]" />
+          App Store
+        </button>
+        <button className="bg-[#003b95] text-xs md:text-sm font-bold rounded-[2rem] px-4 py-2 md:px-5 md:py-3 hover:bg-gray-800 cursor-pointer transition-all flex text-gray-100 items-center gap-2">
+          <BiLogoPlayStore size={16} className="md:size-[20px]" />
+          Play Store
+        </button>
+      </div>
+    </div>
+    <div className="hidden md:flex lg:flex items-center justify-center mt-6 md:mt-0">
+      <img
+        src={"/assets/videos/Online connection.gif"}
+        alt="img"
+        className="w-full max-w-[32rem] h-auto md:h-[32rem]"
+      />
+    </div>
+  </section>
+   
   );
 }
 
 export default HeroSection
+
+ 
